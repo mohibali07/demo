@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi id voluptatem est distinctio possimus doloribus voluptates, ut nobis dolorum nesciunt provident consequuntur eum, deserunt vel? Laborum facere aut illo maxime.</p>
-    <div class="container"></div>
-    <div class="container2"></div>
-    <div class="container3"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Grok</title>
+  </head>
+  <body>
+    <div class="main">
+      <!-- header -->
+      <div class="header">
+        <div class="logo"><img src="/assets/logo.png" alt="" /></div>
+        <div class="options">
+          <img src="/assets/newchat.png" class="optionImg" />
+          <img src="/assets/share.png" class="optionImg" /><img
+            src="/assets/history.png"
+            class="optionImg"
+          /><img src="/assets/profile.webp" class="optionImg profileImg" />
+        </div>
+      </div>
+
+      <!-- chat input -->
+      <div class="chatInput shadowCss">
+        <input
+          type="text"
+          name="prompt"
+          id="promptInput"
+          placeholder="How can Grok help?"
+        />
+        <div class="promptOptions">
+          <div class="part1">
+            <button>
+              <img src="/assets/attach.png" class="attach shadowCss" />
+            </button>
+
+            <button id="feature">
+              <img src="/assets/model.png" />DeepSearch
+              <img src="/assets/dropdown.png" />
+            </button>
+            <button id="ideas"><img src="/assets/ideas.png" />Think</button>
+          </div>
+          <div class="part2">
+            <button id="model">
+              Grok 3 <img src="/assets/dropdown.png" />
+            </button>
+            <button id="submitBtn">
+              <img src="/assets/submit.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
